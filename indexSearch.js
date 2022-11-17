@@ -2,12 +2,11 @@ import { nationalParksArray } from "./scripts/nationalParkData.js";
 import { locationsArray } from "./scripts/locationData.js";
 import { parkTypesArray } from "./scripts/parkTypeData.js";
 
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-export function plusSlides(n) {
+function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
@@ -32,3 +31,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+export {plusSlides};
