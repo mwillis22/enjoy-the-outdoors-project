@@ -18,3 +18,17 @@ for (let i=0; i < parkTypesArrayLength; i ++) {
 }
 
 
+let searchButton = document.getElementById('searchBtn');
+searchButton.addEventListener('click', selectedOption);
+
+const searchBtn = document.getElementById('searchBtn');
+console.log(searchBtn);
+
+function selectedOption() {
+  let locationData = document.getElementById('Location').value;
+  let parkTypeData = document.getElementById('What').value;
+  filterArray(locationData, parkTypeData);
+}
+
+
+

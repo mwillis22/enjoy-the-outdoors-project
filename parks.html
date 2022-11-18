@@ -6,26 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Park</title>
     <link rel="stylesheet" href="parkspage.css">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        
+        li.dropdown {
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
+        
 </head>
 
 <body>
     <header>
         <nav>
-            Parks Page
         </nav>
     </header>
-    <div class="topnav">
-        <a class="hover" href="#home">News</a>
-        <a href="#news">Home</a>
-        <a href="parks.html">National Parks Search</a>
-        <a href="#about">Mountains Information</a>
-      </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">Description</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+            <a href="./index.html">Home</a>
+            <a href="./mountains.html">Mountains</a>
+            <a href="./parks.html">Refresh</a>
+          </div>
+        </li>
+      </ul>
+      
+      <h3>Welcome</h3>
+      <p>.</p>
 
       <select name="What" id="What">
         <option value="">Select Park Type</option>
       </select>
       <button id="btn1">Search</button>
-
 
       <select name="What Do I Put Here" id="Location">
         <option value="">Select Location</option>
@@ -33,7 +93,6 @@
 
       <button id="searchBtn">Search</button>
       
-
     <h1 id="h1">
         <button>button1</button>
     </h1>
