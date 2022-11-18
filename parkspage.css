@@ -58,3 +58,7 @@ select#What {
     height: 30px;
     font-size: medium;
 }
+button {
+    font-size: medium;
+    font: 400;
+}
