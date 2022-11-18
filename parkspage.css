@@ -1,22 +1,14 @@
 body {
-    background-color: cornflowerblue;
+    background-color: azure;
 }
 
 h1 {
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
 
 button {
-    font-family: monospace;
-    font-style: italic;
+    font-family: monospace; font-family: fantasy;
     font-size: x-large;
 }
 
@@ -30,6 +22,7 @@ html {
 .topnav {
     background-color: #333;
     overflow: hidden;
+    text-align: center;
 }
 
 .topnav a {
@@ -39,6 +32,7 @@ html {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+    font-family: fantasy;
 }
 
 .topnav a:hover {
@@ -49,4 +43,18 @@ html {
 .topnav a.active {
     background-color: rgb(96, 141, 226);
     color: white;
+}
+
+select#Location {
+    width: 200px;
+    height: 30px;
+    font-size: medium;
+    font-family: inherit;
+    font-style:   
+}
+
+select#What {
+    width: 200px;
+    height: 30px;
+    font-size: medium;
 }
